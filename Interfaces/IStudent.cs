@@ -1,6 +1,7 @@
-﻿using StudentsAndCoursesInClass.Operations;
+﻿using StudentsAndCoursesInClass.Models;
+using StudentsAndCoursesInClass.Operations;
 
-namespace StudentsAndCoursesInClass.Models
+namespace StudentsAndCoursesInClass.Interfaces
 {
     public interface IStudent
     {

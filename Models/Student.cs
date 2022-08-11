@@ -1,4 +1,5 @@
-﻿using StudentsAndCoursesInClass.Operations;
+﻿using StudentsAndCoursesInClass.Interfaces;
+using StudentsAndCoursesInClass.Operations;
 
 namespace StudentsAndCoursesInClass.Models
 {
@@ -35,6 +36,13 @@ namespace StudentsAndCoursesInClass.Models
             StudentNZQACourses = new List<NZQACourses>();
 
         }
+
+        public virtual void AddStudentHardware(string hardware)
+        {
+            StudentHardware.Add(hardware);
+        }
+
+
 
     }
 }

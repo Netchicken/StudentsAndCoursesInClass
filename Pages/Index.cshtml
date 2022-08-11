@@ -27,6 +27,46 @@
         {
             <h3>@Model.student.FirstName @Model.student.LastName</h3>
             <h4> @Model.student.Course.Name @Model.student.Course.Tutor</h4>
+
+            <ul>
+
+                @foreach (var item in Model.student.MainTransportType)
+                {
+                    <li> @item   </li>
+
+
+
+                }
+            </ul>
+
+            <ul>
+
+                @foreach (var item in Model.student.StudentHardware)
+                {
+                    <li> @item   </li>
+
+
+
+                }
+            </ul>
+
+
+            <ul>
+
+                @foreach (var item in Model.student.StudentNZQACourses)
+                {
+                    <li> @item.Name </li>
+                    <li> @item.Number </li>
+                    <li> @item.YearCompleted   </li>
+
+
+
+                }
+            </ul>
+
+
+
+
         }
         @*<h3> @Model.ErrorMessage</h3>*@
 
