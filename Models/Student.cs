@@ -3,11 +3,13 @@ using StudentsAndCoursesInClass.Operations;
 
 namespace StudentsAndCoursesInClass.Models
 {
-    public class Student : IStudent
+    public class Student : IStudent, IStudentName
     {
         public int ID { get; set; }
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
         public DateTime DOB { get; set; }
         public Course Course { get; set; }
 
@@ -18,7 +20,6 @@ namespace StudentsAndCoursesInClass.Models
         public List<string> MainTransportType { get; set; }
 
         public List<NZQACourses> StudentNZQACourses { get; set; }
-
         //public int? StudentSelected { get; set; }
 
         public Student()

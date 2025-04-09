@@ -31,7 +31,7 @@ namespace StudentsAndCoursesInClass.Pages
         {
 
             IsFirstLoad = true;
-            
+
             student = Factory.GetAStudent(StudentSelected);
 
             return Page();
